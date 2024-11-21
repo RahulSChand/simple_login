@@ -1,0 +1,19 @@
+Front page has title "Bank webiste"
+
+Has some text called
+
+"Welcome to bankwebsite Bank101"
+
+Then there are two buttons
+
+1) Create your account (multiple step workflow)
+2) Check exchange rates qoute (1 step workflow)
+
+Inside Login there will be a bunch of fields (initally all text)
+1) Need to fill the fields
+2) click on create account 
+(??) Maybe some restrictions on password so that there is difficulty
+
+There will be some amount in your Bank
+Go to the transaction page -> Add a beneficinary -> Given some initial logic -> calculate amount to be added -> Transfer (You need to click on some button -> like transfer to account or from account) -> based on if u get this wrong or correct -> Either success (Good)
+-> Failure (start again or end?) -> Not sure

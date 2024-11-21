@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Transaction</title>
     <style>
         body {
             display: flex;
@@ -15,7 +15,7 @@
         div {
             text-align: center;
             display: flex;
-            flex-direction: column;  
+            flex-direction: column;
         }
         .input-group {
             display: flex;  
@@ -36,28 +36,30 @@
 <body>
     <div>
         <div class="input-group">
-            <label for="username">Name: </label>
-            <input type="text" id="username" name="username">
+            <label for="transactionID">Enter Your customer ID: </label>
+            <input type="text" id="transactionID" name="transactionID">
         </div>
         <div class="input-group">
-            <label for="dob">Date of Birth: </label>
-            <input type="text" id="dob" name="dob">
+            <label for="otherID">Enter customer ID of account you are sending to: </label>
+            <input type="text" id="otherID" name="otherID">
         </div>
         <div class="input-group">
-            <label for="customerID">Customer ID: </label>
-            <input type="text" id="customerID" name="customerID">
+            <label for="amountID">Enter Amount To Send To: </label>
+            <input type="text" id="amountID" name="amountID">
         </div>
-        <button id="createAccountButton" onclick="login()">Login To Account</button>
+
+        <button id="submitTransactionButton" onclick="validateTransaction()">Submit</button>
     </div>
 
     <script>
-        function login() {
-            const customerID = document.getElementById('customerID').value;
-            if (customerID) {
-                localStorage.setItem('customerID', customerID);  // Store the ID in localStorage
-                window.location.href = 'transaction.html';  // Navigate to the next page
+        function validateTransaction() {
+            const enteredID = document.getElementById('transactionID').value;
+            const storedID = localStorage.getItem('customerID');
+            
+            if (enteredID === storedID) {
+                window.location.href = 'success.html';  // Redirect to success page
             } else {
-                alert('Please enter a Customer ID');
+                window.location.href = 'error.html';  // Redirect to error page
             }
         }
     </script>
