@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        div {
+            text-align: center;
+            display: flex;
+            flex-direction: column;  /* Stack input fields vertically */
+        }
+        .input-group {
+            display: flex;  /* Align label and input horizontally */
+            margin: 15px 0;  /* Space between each input group */
+            justify-content: center;  /* Optional: Center label and input */
+        }
+        label {
+            font-size: 20px;
+            margin-right: 10px;  /* Space between label and input */
+        }
+        input {
+            font-size: 20px;
+            padding: 10px;
+            width: 200px;  /* Adjust width as needed */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="input-group">
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username">
+        </div>
+        <div class="input-group">
+            <label for="password">Password: </label>
+            <input type="text" id="password" name="password">
+        </div>
+    </div>
+</body>
+</html>
