@@ -17,3 +17,21 @@ Inside Login there will be a bunch of fields (initally all text)
 There will be some amount in your Bank
 Go to the transaction page -> Add a beneficinary -> Given some initial logic -> calculate amount to be added -> Transfer (You need to click on some button -> like transfer to account or from account) -> based on if u get this wrong or correct -> Either success (Good)
 -> Failure (start again or end?) -> Not sure
+
+Simple design (What can be tested)
+
+1. Single click workflow of reading exchange rate -> Need a way to read values and return
+
+2. Multi-step workflow -> Is there -> It also has this thing where you need to remember stuff
+    -> What it needs is to use logic and figure out what to put in the date column and stuff based on errors
+
+
+Before that what do we have currently
+1. Single click workflow
+2. Multiple click workflow
+3. Not being able to solve something
+
+4. Figuring out what fields to fill
+    - An error happens when u fill wrong field
+    - Or the user should know what to write in each field
+
